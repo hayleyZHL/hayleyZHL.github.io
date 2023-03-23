@@ -1,0 +1,315 @@
+body {
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../images/bg.jpg"); */
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    -webkit-text-size-adjust:100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.center {
+    margin:0 auto;
+    display: block;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.contact_logo{
+    color: #111111;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px #222222;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.project_heading{
+    font-family: proxima-nova,Arial;
+    color: #222222;
+    font-weight: 700;
+    margin: 10px auto 0px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.project_heading_horizontal{
+    font-size: 25px;
+}
+
+.project_heading_vertical{
+    font-size: 20px;
+}
+
+.bio_text_horizontal{
+    font-family: proxima-nova, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 15px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+.default_text{
+    font-family: proxima-nova, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.question{
+    font-family: proxima-nova, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.bio_text_vertical{
+    font-family: proxima-nova, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 15px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+ul{
+    padding-left : 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+.name{
+     font-family:proxima-nova, Arial;
+     color: #222222;
+     font-weight: 500;
+     font-size: 50px;
+     margin: 0 0 -5px 0;
+     line-height: 1;
+ }
+.project{
+    width:100%;
+    border-color: #aaaaaa;
+    border-width: 1px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-style:solid;
+    align-items: center;
+    margin-top:20px;
+}
+.project_horizontal{
+    height:240px;
+}
+.project_horizontal_private{
+    height:93.75px;
+}
+
+.project_vertical{
+    height:auto;
+}
+.project_thumb_right{
+    float: left;
+    height:100%;
+    width: 37.9%;
+    overflow: hidden
+}
+.project_thumb_bottom{
+    width:100%;
+}
+.projectthumbnail_right{
+    width:100%;
+    border-radius: 5px;
+}
+.projectthumbnail_bottom{
+    width:100%;
+    border-radius: 5px;
+}
+.project_info_right{
+    float: right;
+    width: 60%;
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.project_info_bottom{
+    margin-left:5px;
+    margin_right:5px;
+    height: 50%;
+}
+.project_name{
+    font-family: proxima-nova, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.project_info_text{
+    font-family: proxima-nova, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 400;
+    margin: auto 0px auto 0px;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    text-transform: none;
+}
+
+.project_resource{
+
+    line-height: 1.5;
+}
+
+.affiliation{
+    font-family: proxima-nova, Arial;
+    color: #cccccc;
+    font-weight: 400;
+    font-size: 21px;
+    margin: -5px 0 15px;
+}
+
+.pre_affiliation{
+    font-family: proxima-nova, Arial;
+    color: #aaaaaa;
+    font-size: 16px;
+    margin: -10px 0 15px;
+}
+
+.content i,
+.content a {
+    color: #cccccc;
+}
+#travel_heading{
+    margin-top: 30px;
+    font-weight: 400;
+}
+#projects_heading{
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.bio_left_horizontal{
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bio_left_vertical{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bio_right_horizontal{
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    margin-left: 2.5%;
+}
+.bio_right_vertical{
+    width: 100%;
+    margin-top:10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.vertical{
+    width: 100%;
+    margin-top:10px;
+    display: block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+}
+
+#bio_contact {
+    margin-top: 2%;
+
+}
+
+img{
+    border-radius: 5px;
+    display: block;
+}
+
+.image {
+    border-radius: 5px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image img {
+    border-radius: 5px;
+    display: block;
+}
+
+.image.left, .image.right {
+    max-width: 40%;
+}
+
+.image.left img, .image.right img {
+    width: 100%;
+}
+
+.image.left {
+    float: left;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+.image.right {
+    float: right;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em;
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.image.fit img {
+    width: 100%;
+}
+
+.image.main {
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%;
+}
+
+.image.main img {
+    width: 100%;
+}

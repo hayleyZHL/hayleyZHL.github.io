@@ -1,21 +1,138 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--base href="/website/"/-->
+    <title>Hayley Lin </title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/jsy1saf.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+    <script src="assets/libs/d3.min.js"></script>
+    <script type="text/javascript", src="assets/js/pageControl.js"></script>
+</head>
 
-<div class="home">
+<body onresize="ResizePage()">
+    <div class="container center" style="margin-top: 30px; margin-bottom: 30px; width: 950px;" id="intro">
+        <div id = "name_affiliation">
+            <p class="name"><a>Hayley Lin</a></p>
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
+        <div class = "container center content" style="margin-top: 40px;" id = "bio">
+            <div id= "bio_left" class="bio_left_horizontal">
+                <a href="#" class="image"><img class = "photo" src="assets/images/hayleylin.jpeg"/></a>
+            </div>
+            <div id= "bio_right" class="bio_right_horizontal">
+                <p class = "bio_text bio_text_horizontal"> I am a master student at the College of Computing and Information Science at the Cornell University. 
+                    I'm passionate about interaction design and data visualization! 
+                </p>
+                <p class = "bio_text bio_text_horizontal">
+                    I have worked on multiple projects that employ interaction and visualization techniques
+                    to effectively communicate information.
+                    I obtained my Bachelor degree with honors from the Department of Computer Science, University of Toronto.  
+                </p>
+                <p>
+                    <a  href="CV_Hayley.pdf" target="_blank" class="contact_logo" > <i class="fas fa-file-alt fa-1x" data-fa-transform="down-10"></i></a>
+                    <a  href="mailto:zl846@cornell.edu" target="_blank" class="contact_logo" style="margin-left: 10px;"><i class="fas fa-envelope fa-1x " data-fa-transform="down-10"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class = "container center" id = "projects_heading" style="width: 950px;" >
+        <p class="project_heading project_heading_horizontal">
+            Projects
+        </p>
+    </div>
 
-</div>
+    <div class="container center" id="paperContainer" style="width: 950px;">
+        <div id="projects">
+            <div class="project project_horizontal">
+                <div class="project_thumb project_thumb_right">
+                    <a href="https://hayleyzhl.github.io/Visualization_BankFailures/" target="_blank">
+                        <img class="projectthumbnail projectthumbnail_right" src="assets\projects\bankfailure\thumbnail.png">
+                    </a>
+                </div>
+                <div class="project_info project_info_right">
+                    <a class="project_name">Bank Failures</a>
+                    <p class="project_info_text">In light of the recent shutting down of Silicon Valley Bank. I start to wonder whether
+                        this is the sign of another recession, or are we already in a recession. I decided to take a look at similar
+                        bank failures happends in the past recet decades. Here is a visualization of bank failure cases since 2000.
+                    </p>
+                </div>
+            </div>
+            <div class="project project_horizontal">
+                <div class="project_thumb project_thumb_right">
+                    <a href="https://hayleyzhl.github.io/Visualization_YelpBusinessPittsburgh/" target="_blank">
+                        <img class="projectthumbnail projectthumbnail_right" src="assets\projects\yelpbussiness\thumbnail.png">
+                    </a>
+                </div>
+                <div class="project_info project_info_right">
+                    <a class="project_name">Bussiness Finder</a>
+                    <p class="project_info_text">What is the best way to use visualization to explore the bussiness of an area? In this visualization,
+                        I applied the context + focus design principle, which allows a user to have an overview of bussinesses in an area, and simulatenously access the 
+                        details of a bussiness they are interested in.
+                    </p>
+                </div>
+            </div>
+            <div class="project project_horizontal">
+                <div class="project_thumb project_thumb_right">
+                    <a href="https://hayleyzhl.github.io/Visualization_BusinessCrimePhiladelphia/" target="_blank">
+                        <img class="projectthumbnail projectthumbnail_right" src="assets\projects\bussinesscrime\thumbnail.png">
+                    </a>
+                </div>
+                <div class="project_info project_info_right">
+                    <a class="project_name">Crimte v.s. Bussiness</a>
+                    <p class="project_info_text">How does the crime rate impact bussiness? In this visualization,
+                        we examine crime and bussiness distribution in Philadelphia. No wonder more crimes lead to fewer bussinesses, but we found one district that has both high numbers of bussiness and crimes. 
+                    </p>
+                </div>
+            </div>
+            <div class="project project_horizontal">
+                <div class="project_thumb project_thumb_right">
+                    <a href="https://hayleyzhl.github.io/Visualization_YelpReviews/" target="_blank">
+                        <img class="projectthumbnail projectthumbnail_right" src="assets\projects\bussinessvis\thumbnail.png">
+                    </a>
+                </div>
+                <div class="project_info project_info_right">
+                    <a class="project_name">Bussisness after Pandemic?</a>
+                    <p class="project_info_text">How does the pandemic change the landscape of bussiness, and is now a good time to start a new one? In this visualization,
+                        we visualize the reviews of bussinesses before and after pandmeic. Looks like there is a significant drop of review count of bussiness on Yelp. 
+                    </p>
+                </div>
+            </div>
+            <div class="project project_horizontal">
+                <div class="project_thumb project_thumb_right">
+                    <a href="https://hayleyzhl.github.io/Visualization_PokemonAbilities/" target="_blank">
+                        <img class="projectthumbnail projectthumbnail_right" src="assets\projects\pokemon\thumbnail.png">
+                    </a>
+                </div>
+                <div class="project_info project_info_right">
+                    <a class="project_name">What is your Pokémon?</a>
+                    <p class="project_info_text">
+                        Welcome to the fascinating world of Pokémon, and there is a Pokémon for everyone. This visualization showcases the wealth of information 
+                        available on these extraordinary beings. Come to check out and collect your favorite Pokémons!
+                    </p>
+                </div>
+            </div>
+            <div class="project project_horizontal">
+                <div class="project_thumb project_thumb_right">
+                    <a href="https://hayleyzhl.github.io/Visualization_Trees/" target="_blank">
+                        <img class="projectthumbnail projectthumbnail_right" src="assets\projects\trees\thumbnail.png">
+                    </a>
+                </div>
+                <div class="project_info project_info_right">
+                    <a class="project_name">Have we planted more trees?</a>
+                    <p class="project_info_text">
+                        Our climate is changing dramatically, largely due to extra green houses gas from human activities. Planting more trees will help, and trees are beautiful!
+                        So, how did we do in terms of tree planning in San Fransico? The visualization tells you what are the popular types of trees, how many have been planted and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<body>
+
+</html>
